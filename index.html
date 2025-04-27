@@ -1,14 +1,224 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>SAUAFG Workshop ICCV 2025</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ICCV 2025 Workshop on AI-driven Skilled Activity Understanding, Assessment and Feedback Generation"
+          name="description">
+    <title>SAUAFG Workshop ICCV 2025</title>
+
+    <!-- Font Awesome for icons without integrity attribute -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Bulma CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 120px;
+            line-height: 1.6;
+            text-align: justify;
+
+        }
+        h1, h2, h3 {
+            color: #333;
+            font-size: 2.8em;  /* Title font size */
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .authors, .section {
+            margin-bottom: 20px;
+        }
+        /* Center-align specific sections */
+        header, .demo, .results {
+            text-align: center;
+        }
+        /* Styling for superscripts */
+        sup {
+            font-size: 0.8em;
+            vertical-align: super;
+        }
+        /* Custom button styling similar to Bulma */
+        .link-block {
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .button {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 16px;
+            border-radius: 50px;
+            background-color: #333;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #444;
+        }
+        .icon {
+            margin-right: 8px;
+        }
+        /* Ensure Font Awesome styles apply */
+        .fab {
+            font-family: "Font Awesome 5 Brands" !important;
+        }
+        table, th, td {
+                      border:0.1px solid black;
+                      text-align: center;
+                    }
+
+
+    </style>
 </head>
 <body>
 
-<h1>Workshop on Skilled Activity Understanding, Assessment and Feedback Generation at <a href="https://iccv.thecvf.com/">ICCV 2025</a></h1>
-<p>International Workshop on AI-driven Skilled Activity Understanding, Assessment and Feedback Generation (SAUAFG). To be organized in conjunction with ICCV 2025.</p>
-<p>Great line up of Speakers: Dr. Kristen Grauman (UT Austin + FAIR), Dr. Antonino Furnari (University of Catania), Dr. Rogerio Garcia (Intuitive Surgical Inc.), Dr. Ehsan Adeli (Stanford University) </p>
-<p>Organizers: Paritosh Parmar, Angela Yao, Basura Fernando, Brendan Morris</p>  
-<p>More details on Paper Submission (+ website updates) Coming Soon---Stay tuned! Please bookmark this page, so you don't miss out! Please join us in Honolulu, Hawaii!</p>
+<header>
+    <h1><a href="https://iccv.thecvf.com/">ICCV 2025</a> Workshop on AI-driven Skilled Activity Understanding, Assessment & Feedback Generation</h1>
+
+    <!-- Paper Link -->
+    <span class="link-block">
+            <a class="button is-dark" href="#speakers">
+<!--                <span class="icon">-->
+<!--                    <i class="fas fa-file-pdf"></i> &lt;!&ndash; GitHub icon here &ndash;&gt;-->
+<!--                </span>-->
+                <span>Speakers</span>
+            </a>
+        </span>
+    <!-- Code Link -->
+    <span class="link-block">
+            <a class="button is-dark" href="#cfp">
+<!--                <span class="icon">-->
+<!--                    <i class="fab fa-github"></i> &lt;!&ndash; GitHub icon here &ndash;&gt;-->
+<!--                </span>-->
+                <span>Call for Papers</span>
+            </a>
+        </span>
+    <!-- Dataset Link Button with Emoji Icon -->
+    <span class="link-block">
+            <a class="button is-dark" href="#papersubmission">
+<!--                <span class="icon">-->
+<!--                    💾 &lt;!&ndash; Emoji as an icon &ndash;&gt;-->
+<!--                </span>-->
+                <span>Paper Submission</span>
+            </a>
+        </span>
+
+     <span class="link-block">
+            <a class="button is-dark" href="#program">
+<!--                <span class="icon">-->
+<!--                    💾 &lt;!&ndash; Emoji as an icon &ndash;&gt;-->
+<!--                </span>-->
+                <span>Program</span>
+            </a>
+        </span>
+
+     <span class="link-block">
+            <a class="button is-dark" href="#organizers">
+<!--                <span class="icon">-->
+<!--                    💾 &lt;!&ndash; Emoji as an icon &ndash;&gt;-->
+<!--                </span>-->
+                <span>Organizers</span>
+            </a>
+        </span>
+
+    <span class="link-block">
+            <a class="button is-dark" href="#contact">
+<!--                <span class="icon">-->
+<!--                    💾 &lt;!&ndash; Emoji as an icon &ndash;&gt;-->
+<!--                </span>-->
+                <span>Contact</span>
+            </a>
+        </span>
+</header>
+
+<section class="abstract section">
+    <h2>Introduction</h2>
+    <p>Imagine a world where computer vision-based systems can analyze a video of an athlete, a surgeon, a patient, or a factory worker and instantly provide expert-level actionable feedback---correcting techniques, identifying inefficiencies, and helping people refine their skills in real time. Thanks to rapid progress in video understanding, this vision is becoming reality. AI-powered systems can now analyze complex human activities, assess performance, and generate intelligent feedback, unlocking new possibilities in sports, healthcare, manufacturing, education, rehabilitation, and beyond. Through Expert Keynotes and Invited Contributions, this workshop will explore the cutting edge of skilled activity understanding, assessment, and feedback generation, bridging research and real-world applications. </p>
+<br>
+<p>As AI systems become more capable of understanding human expertise, the implications are profound---empowering individuals with personalized coaching, democratized skill development, and scalable training solutions. We invite researchers, industry leaders, and practitioners to join us in shaping the future of AI-powered skill understanding. Whether  working on foundational research, applied solutions, or real-world deployment, this workshop is an opportunity and forum to learn about and push the boundaries of how AI perceives, evaluates, and enhances human ability.
+    </p>
+</section>
+
+<section class="speakers section" id="speakers">
+    <h2>Speakers</h2>
+    <p><a href="https://www.cs.utexas.edu/~grauman/"><strong>Dr. Kristen Grauman</strong></a> (UT Austin + FAIR)</p>
+    <p><a href="https://antoninofurnari.github.io/"><strong>Dr. Antonino Furnari</strong></a> (University of Catania)</p>
+    <p><a href="https://www.linkedin.com/in/rogerionespolo"><strong>Dr. Rogerio Garcia</strong></a> (Intuitive Surgical)</p>
+    <p><a href="https://stanford.edu/~eadeli/"><strong>Dr. Ehsan Adeli</strong></a> (Stanford University)</p>
+</section>
+
+
+<section class="cfp section" id="cfp">
+    <h2>Call for Papers</h2>
+    More information coming soon!
+</section>
+
+
+<section class="papersubmission section" id="papersubmission">
+    <h2>Paper Submission</h2>
+    We will have two tracks: 1) Proceedings Track; 2) Non-Proceedings Track (present at the workshop, but not included in the proceedings and can also be submitted to future venues + includes papers previously accepted to other venues).
+
+    More information coming soon!
+</section>
+
+<section class="program section" id="program">
+    <h2>Workshop Program</h2>
+    <table style="width:50%">
+        <tr>
+            <th>Program</th>
+        </tr>
+        <tr>
+            <td>Opening Remarks</td>
+        </tr>
+        <tr>
+            <td>Keynote-1 + QA</td>
+        </tr>
+        <tr>
+            <td>Keynote-2 + QA</td>
+        </tr>
+        <tr>
+            <td>Tea break + Poster Session</td>
+        </tr>
+        <tr>
+            <td>Keynote-3 + QA</td>
+        </tr>
+        <tr>
+            <td>Keynote-4 + QA</td>
+        </tr>
+        <tr>
+            <td>Closing Remarks</td>
+        </tr>
+    </table>
+</section>
+
+<section id="organizers" class="organizers section">
+    <h2>Organizers</h2>
+    <p><a href="https://paritoshparmar.github.io/"><strong>Paritosh Parmar</strong></a></p>
+    <p><a href="https://www.comp.nus.edu.sg/cs/people/ayao/"><strong>Angela Yao</strong></a></p>
+    <p><a href="https://basurafernando.github.io/"><strong>Basura Fernando</strong></a></p>
+    <p><a href="http://rtis.oit.unlv.edu/"><strong>Brendan Morris</strong></a></p>
+</section>
+
+
+<section id="Contact" class="contact section">
+    <h2>Contact</h2>
+    Please do not hesitate to email us if you have any questions or concerns!
+</section>
+
+
+<footer>
+    <p>&copy; Webpage designed by <a href="https://paritoshparmar.github.io">Paritosh Parmar</a> and licensed under <a
+            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0
+        International License.</a> Please feel free to use it for your projects, but consider acknowledging in your
+        webpage!</p>
+</footer>
+
 </body>
 </html>
+
