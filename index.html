@@ -73,6 +73,27 @@
                       text-align: center;
                     }
 
+        ul.top-level {
+          list-style: none;
+          padding-left: 0;
+        }
+        
+        ul.top-level ul {
+          list-style: none;
+          padding-left: 0.5em;
+        }
+        
+        ul.top-level ul li {
+          position: relative;
+          padding-left: 1.2em; /* shift all lines right to make room for bullet */
+        }
+        
+        ul.top-level ul li::before {
+          content: "-";
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
 
     </style>
 </head>
@@ -156,7 +177,58 @@
 
 <section class="cfp section" id="cfp">
     <h2>Call for Papers</h2>
-    More information coming soon!
+    <p>We invite contributions related to, but not limited to, the following areas:</p>
+    <ul class="top-level">
+        <li><strong>Algorithms &amp; Applications for Skilled Human Activity and Performance Assessment</strong>
+            <ul>
+                <li>Human Skills/Performance/Action Quality Assessment/Evaluation in various domains such as Sports,
+                    Industry/Assembly line, Musical and Dance performance, Surgical procedures, Fitness, Robotics, Gait
+                    Assessment, Rehabilitation, Healthcare etc.
+                </li>
+                <li>Action and Process Mistake Detection using video and video analytics</li>
+                <li>Missing Action Prediction and Alternative Action Sequence Prediction.</li>
+                <li>Brave new ideas and novel applications of Action Quality Assessment in: Video Generation,
+                    Human-Robot-Collaboration, Robot Skills Learning etc.
+                </li>
+            </ul>
+        </li>
+        <li><strong>Feedback Report Generation for Skills/Performance Improvement &amp; Guidance</strong>
+            <ul>
+                <li>Captioning and Narration for Natural Language Corrective Feedback Generation</li>
+            </ul>
+        </li>
+        <li><strong>New Datasets &amp; Benchmarks</strong>
+            <ul>
+                <li>Datasets and Benchmarks</li>
+                <li>Multimodal, Multiview datasets</li>
+                <li>Creation of Synthetic Fine-grained Action datasets</li>
+                <li>Fine-grained Video/Action generation</li>
+            </ul>
+        </li>
+        <li><strong>Metric learning for Skills/Action/Motion Quality Assessment</strong></li>
+        <li><strong>Fine-grained Action Recognition &amp; Segmentation</strong></li>
+        <li><strong>Representation Learning &amp; Learning Paradigms</strong>
+            <ul>
+                <li>Pose Estimation and Human-Centric Representation Learning, especially, suitable for challenging
+                    scenarios such as high-speed, non-regular actions, occlusions, etc.
+                </li>
+                <li>Generalization/Transfer Learning/Domain Adaptation for SAUAFG</li>
+                <li>Semi/Self-Supervised Learning for SAUAFG</li>
+                <li>Continual/Incremental Skills and Action Quality Assessment</li>
+                <li>Incorporation of Knowledge Graphs</li>
+                <li>Learnable Task Graphs</li>
+            </ul>
+        </li>
+        <li><strong>Explainability &amp; Interpretability in SAUAFG models</strong></li>
+        <li><strong>Ethics &amp; Fairness in SAUAFG</strong>
+            <ul>
+                <li>Ethical Considerations, Fairness, and Bias in SAUAFG systems, and strategies to mitigate them.</li>
+                <li>Social Impact of SAUAFG, including its ability to democratize access to training and Performance
+                    Evaluations, particularly in underserved communities.
+                </li>
+            </ul>
+        </li>
+    </ul>
 </section>
 
 
