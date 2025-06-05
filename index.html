@@ -15,7 +15,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 120px;
             line-height: 1.6;
@@ -73,21 +73,36 @@
                       text-align: center;
                     }
 
+
+<!--        ul.custom-bullets {-->
+<!--  list-style: none;-->
+<!--  padding-left: 0;-->
+<!--}-->
+
+<!--ul.custom-bullets li::before {-->
+<!--  content: "- ";-->
+<!--  margin-right: 6px;-->
+<!--  color: black; /* optional: color customization */-->
+<!--}-->
+<!--ul.custom-bullets ul {-->
+<!--  margin-left: 20px; /* indent nested list */-->
+<!--}-->
+
         ul.top-level {
           list-style: none;
           padding-left: 0;
         }
-        
+
         ul.top-level ul {
           list-style: none;
           padding-left: 0.5em;
         }
-        
+
         ul.top-level ul li {
           position: relative;
           padding-left: 1.2em; /* shift all lines right to make room for bullet */
         }
-        
+
         ul.top-level ul li::before {
           content: "-";
           position: absolute;
@@ -95,19 +110,25 @@
           top: 0;
         }
 
+
+
+
+
+
     </style>
 </head>
 <body>
 
 <header>
-    <h1><a href="https://iccv.thecvf.com/">ICCV 2025</a> Workshop on AI-driven Skilled Activity Understanding, Assessment & Feedback Generation</h1>
+    <h1><a href="https://iccv.thecvf.com/">ICCV 2025</a> Workshop on AI-driven Skilled Activity Understanding,
+        Assessment & Feedback Generation</h1>
 
     <!-- Paper Link -->
     <span class="link-block">
             <a class="button is-dark" href="#speakers">
 <!--                <span class="icon">-->
-<!--                    <i class="fas fa-file-pdf"></i> &lt;!&ndash; GitHub icon here &ndash;&gt;-->
-<!--                </span>-->
+                <!--                    <i class="fas fa-file-pdf"></i> &lt;!&ndash; GitHub icon here &ndash;&gt;-->
+                <!--                </span>-->
                 <span>Speakers</span>
             </a>
         </span>
@@ -115,8 +136,8 @@
     <span class="link-block">
             <a class="button is-dark" href="#cfp">
 <!--                <span class="icon">-->
-<!--                    <i class="fab fa-github"></i> &lt;!&ndash; GitHub icon here &ndash;&gt;-->
-<!--                </span>-->
+                <!--                    <i class="fab fa-github"></i> &lt;!&ndash; GitHub icon here &ndash;&gt;-->
+                <!--                </span>-->
                 <span>Call for Papers</span>
             </a>
         </span>
@@ -124,26 +145,26 @@
     <span class="link-block">
             <a class="button is-dark" href="#papersubmission">
 <!--                <span class="icon">-->
-<!--                    💾 &lt;!&ndash; Emoji as an icon &ndash;&gt;-->
-<!--                </span>-->
+                <!--                    💾 &lt;!&ndash; Emoji as an icon &ndash;&gt;-->
+                <!--                </span>-->
                 <span>Paper Submission</span>
             </a>
         </span>
 
-     <span class="link-block">
+    <span class="link-block">
             <a class="button is-dark" href="#program">
 <!--                <span class="icon">-->
-<!--                    💾 &lt;!&ndash; Emoji as an icon &ndash;&gt;-->
-<!--                </span>-->
+                <!--                    💾 &lt;!&ndash; Emoji as an icon &ndash;&gt;-->
+                <!--                </span>-->
                 <span>Program</span>
             </a>
         </span>
 
-     <span class="link-block">
+    <span class="link-block">
             <a class="button is-dark" href="#organizers">
 <!--                <span class="icon">-->
-<!--                    💾 &lt;!&ndash; Emoji as an icon &ndash;&gt;-->
-<!--                </span>-->
+                <!--                    💾 &lt;!&ndash; Emoji as an icon &ndash;&gt;-->
+                <!--                </span>-->
                 <span>Organizers</span>
             </a>
         </span>
@@ -151,8 +172,8 @@
     <span class="link-block">
             <a class="button is-dark" href="#contact">
 <!--                <span class="icon">-->
-<!--                    💾 &lt;!&ndash; Emoji as an icon &ndash;&gt;-->
-<!--                </span>-->
+                <!--                    💾 &lt;!&ndash; Emoji as an icon &ndash;&gt;-->
+                <!--                </span>-->
                 <span>Contact</span>
             </a>
         </span>
@@ -160,17 +181,31 @@
 
 <section class="abstract section">
     <h2>Introduction</h2>
-    <p>Imagine a world where computer vision-based systems can analyze a video of an athlete, a surgeon, a patient, or a factory worker and instantly provide expert-level actionable feedback---correcting techniques, identifying inefficiencies, and helping people refine their skills in real time. Thanks to rapid progress in video understanding, this vision is becoming reality. AI-powered systems can now analyze complex human activities, assess performance, and generate intelligent feedback, unlocking new possibilities in sports, healthcare, manufacturing, education, rehabilitation, and beyond. Through Expert Keynotes and Invited Contributions, this workshop will explore the cutting edge of skilled activity understanding, assessment, and feedback generation, bridging research and real-world applications. </p>
-<br>
-<p>As AI systems become more capable of understanding human expertise, the implications are profound---empowering individuals with personalized coaching, democratized skill development, and scalable training solutions. We invite researchers, industry leaders, and practitioners to join us in shaping the future of AI-powered skill understanding. Whether  working on foundational research, applied solutions, or real-world deployment, this workshop is an opportunity and forum to learn about and push the boundaries of how AI perceives, evaluates, and enhances human ability.
+    <p>Imagine a world where computer vision-based systems can analyze a video of an athlete, a surgeon, a patient, or a
+        factory worker and instantly provide expert-level actionable feedback---correcting techniques, identifying
+        inefficiencies, and helping people refine their skills in real time. Thanks to rapid progress in video
+        understanding, this vision is becoming reality. AI-powered systems can now analyze complex human activities,
+        assess performance, and generate intelligent feedback, unlocking new possibilities in sports, healthcare,
+        manufacturing, education, rehabilitation, and beyond. Through Expert Keynotes and Invited Contributions, this
+        workshop will explore the cutting edge of skilled activity understanding, assessment, and feedback generation,
+        bridging research and real-world applications. </p>
+    <br>
+    <p>As AI systems become more capable of understanding human expertise, the implications are profound---empowering
+        individuals with personalized coaching, democratized skill development, and scalable training solutions. We
+        invite researchers, industry leaders, and practitioners to join us in shaping the future of AI-powered skill
+        understanding. Whether working on foundational research, applied solutions, or real-world deployment, this
+        workshop is an opportunity and forum to learn about and push the boundaries of how AI perceives, evaluates, and
+        enhances human ability.
     </p>
 </section>
 
 <section class="speakers section" id="speakers">
     <h2>Speakers</h2>
     <p><a href="https://www.cs.utexas.edu/~grauman/"><strong>Dr. Kristen Grauman</strong></a> (UT Austin + FAIR)</p>
-    <p><a href="https://antoninofurnari.github.io/"><strong>Dr. Antonino Furnari</strong></a> (University of Catania)</p>
-    <p><a href="https://www.linkedin.com/in/rogerionespolo"><strong>Dr. Rogerio Garcia</strong></a> (Intuitive Surgical)</p>
+    <p><a href="https://antoninofurnari.github.io/"><strong>Dr. Antonino Furnari</strong></a> (University of Catania)
+    </p>
+    <p><a href="https://www.linkedin.com/in/rogerionespolo"><strong>Dr. Rogerio Garcia</strong></a> (Intuitive Surgical)
+    </p>
     <p><a href="https://stanford.edu/~eadeli/"><strong>Dr. Ehsan Adeli</strong></a> (Stanford University)</p>
 </section>
 
@@ -195,6 +230,7 @@
         <li><strong>Feedback Report Generation for Skills/Performance Improvement &amp; Guidance</strong>
             <ul>
                 <li>Captioning and Narration for Natural Language Corrective Feedback Generation</li>
+                <li>Visual/AR/VR-based Corrective Feedback Generation</li>
             </ul>
         </li>
         <li><strong>New Datasets &amp; Benchmarks</strong>
@@ -229,16 +265,33 @@
             </ul>
         </li>
     </ul>
+
 </section>
 
 
 <section class="papersubmission section" id="papersubmission">
     <h2>Paper Submission</h2>
-    <p>We have following two Paper Tracks:</p>
+    <p>We have following two Paper Tracks. Please use this <a
+            href="https://openreview.net/group?id=thecvf.com/ICCV/2025/Workshop/SAUAFG">[Openreview Link]</a> to submit
+        your papers, and select the appropriate track in OpenReview. We recommend you to use
+        Institution emails to register your account on Openreview, as non-institution emails can take upto 2 weeks to
+        register.</p>
     <br>
-    <p>1) <strong>Proceedings Track.</strong> Please use this <a href="https://openreview.net/group?id=thecvf.com/ICCV/2025/Workshop/SAUAFG">[Openreview Link]</a> to submit your papers. Please let us know if you face any problems. We recommend you to use Institution emails to register your account on Openreview, as non-institution emails can take upto 2 weeks to register. Please use ICCV paper templates. Page limit, excluding references, is 8 pages. Please strictly follow ICCV paper guidelines. </p>
+    <p>1) <strong>Proceedings Track.</strong> Papers accepted to this track will be published in the official
+        proceedings. Please use ICCV paper
+        templates. Page limit, excluding references, is 8 pages. Please strictly follow ICCV paper guidelines. Tentative
+        Deadline is: <i>July 01, 2025</i>.</p>
     <br>
-    <p>2) <strong>Non-Proceedings Track.</strong> These papers would be presented at the workshop, but not included in the proceedings and can also be submitted to future venues. We also invite papers previously accepted to other venues. This tracks allows to share your work and receive feedback on your work, making it stronger. Further information coming soon!
+    <p>2) <strong>Non-Proceedings Track.</strong> These papers would be presented at the workshop, but not included in
+        the proceedings and can also be submitted to future venues. We also invite papers previously accepted to ICCV
+        2025 or any other
+        venues. This tracks allows to share your work and receive feedback on your work, making it stronger. Late
+        breaking work providing provocations for new work and ideas to emerge, with or without an accompanying evaluation,
+        can also be submitted. Tentative
+        Deadline is: <i>July 01, 2025</i>.
+    </p>
+    <br>
+    <p>Please let us know if you face any problems or have any questions.</p>
 </section>
 
 <section class="program section" id="program">
@@ -280,7 +333,7 @@
 </section>
 
 
-<section id="contact" class="contact section">
+<section id="Contact" class="contact section">
     <h2>Contact</h2>
     Please do not hesitate to email us if you have any questions or concerns!
 </section>
