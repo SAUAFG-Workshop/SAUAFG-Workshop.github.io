@@ -110,9 +110,25 @@
           top: 0;
         }
 
+        .circle-photo {
+          width: 180px;              /* adjust as needed */
+          height: 180px;             /* must be equal to width */
+          border-radius: 50%;        /* makes it circular */
+          object-fit: cover;         /* ensures the image fills the circle */
+          overflow: hidden;
+        }
 
+        .team-row {
+          display: flex;
+          justify-content: center;
+          gap: 40px;
+          margin-top: 30px;
+        }
 
-
+        figure {
+          text-align: center;
+          margin: 0;
+        }
 
 
     </style>
@@ -201,14 +217,51 @@
 
 <section class="speakers section" id="speakers">
     <h2>Speakers</h2>
-    <p><a href="https://www.cs.utexas.edu/~grauman/"><strong>Dr. Kristen Grauman</strong></a> (UT Austin + FAIR)</p>
-    <p><a href="https://antoninofurnari.github.io/"><strong>Dr. Antonino Furnari</strong></a> (University of Catania)
+<!--    <p><a href="https://www.cs.utexas.edu/~grauman/"><strong>Dr. Kristen Grauman</strong></a> (UT Austin + FAIR)</p>-->
+<!--    <p><a href="https://antoninofurnari.github.io/"><strong>Dr. Antonino Furnari</strong></a> (University of Catania)-->
+<!--    </p>-->
+<!--    <p><a href="https://www.linkedin.com/in/rogerionespolo"><strong>Dr. Rogerio Garcia</strong></a> (Intuitive Surgical)-->
+<!--    </p>-->
+<!--    <p><a href="https://stanford.edu/~eadeli/"><strong>Dr. Ehsan Adeli</strong></a> (Stanford University)</p>-->
+<!--    <p><a href="https://www.bristol.ac.uk/people/person/Walterio-Mayol-Cuevas-3eaed515-00fd-4112-94a8-7efe5a5fba94/"><strong>Dr. Walterio Mayol-Cuevas</strong></a> (University of Bristol)</p>-->
+<!--    <p><a href="https://www.gedasbertasius.com/"><strong>Dr. Gedas Bertasius</strong></a> (University of North Carolina, Chapel Hill)</p>-->
+
+
+    <section class="team-row">
+        <div>
+        <figure>
+          <img src="kristen_grauman.jpg" alt="Kristen Grauman" class="circle-photo" />
+          <p><a href="https://www.cs.utexas.edu/~grauman/"><strong>Dr. Kristen Grauman</strong></a> (UT Austin + FAIR)</p>
+        </figure>
+        <figure>
+          <img src="antonino_furnari.jpg" alt="Antonino Furnari" class="circle-photo" />
+          <p><a href="https://antoninofurnari.github.io/"><strong>Dr. Antonino Furnari</strong></a> (University of Catania)
     </p>
-    <p><a href="https://www.linkedin.com/in/rogerionespolo"><strong>Dr. Rogerio Garcia</strong></a> (Intuitive Surgical)
+        </figure>
+        <figure>
+          <img src="Rogerio_Garcia.JPEG" alt="Rogerio Garcia" class="circle-photo" />
+          <p><a href="https://www.linkedin.com/in/rogerionespolo"><strong>Dr. Rogerio Garcia</strong></a> (Intuitive Surgical)
     </p>
-    <p><a href="https://stanford.edu/~eadeli/"><strong>Dr. Ehsan Adeli</strong></a> (Stanford University)</p>
-    <p><a href="https://www.bristol.ac.uk/people/person/Walterio-Mayol-Cuevas-3eaed515-00fd-4112-94a8-7efe5a5fba94/"><strong>Dr. Walterio Mayol-Cuevas</strong></a> (University of Bristol)</p>
-    <p><a href="https://www.gedasbertasius.com/"><strong>Dr. Gedas Bertasius</strong></a> (University of North Carolina, Chapel Hill)</p>
+        </figure>
+        </div>
+        <div>
+        <figure>
+          <img src="Ehsan_Adeli.jpg" alt="Ehsan Adeli" class="circle-photo" />
+          <p><a href="https://stanford.edu/~eadeli/"><strong>Dr. Ehsan Adeli</strong></a> (Stanford University)</p>
+        </figure>
+        <figure>
+          <img src="Walterio_MayolCuevas.jpg" alt="Walterio MayolCuevas" class="circle-photo" />
+          <p><a href="https://www.bristol.ac.uk/people/person/Walterio-Mayol-Cuevas-3eaed515-00fd-4112-94a8-7efe5a5fba94/"><strong>Dr. Walterio Mayol-Cuevas</strong></a> (University of Bristol)</p>
+        </figure>
+        <figure>
+          <img src="Gedas_Bertasius.jpg" alt="Gedas Bertasius" class="circle-photo" />
+          <p><a href="https://www.gedasbertasius.com/"><strong>Dr. Gedas Bertasius</strong></a> (University of North Carolina, Chapel Hill)</p>
+        </figure>
+        </div>
+    </section>
+
+
+
 </section>
 
 
@@ -333,10 +386,29 @@
 
 <section id="organizers" class="organizers section">
     <h2>Organizers</h2>
-    <p><a href="https://paritoshparmar.github.io/"><strong>Paritosh Parmar</strong></a></p>
-    <p><a href="https://www.comp.nus.edu.sg/cs/people/ayao/"><strong>Angela Yao</strong></a></p>
-    <p><a href="https://basurafernando.github.io/"><strong>Basura Fernando</strong></a></p>
-    <p><a href="http://rtis.oit.unlv.edu/"><strong>Brendan Morris</strong></a></p>
+<!--    <p><a href="https://paritoshparmar.github.io/"><strong>Paritosh Parmar</strong></a></p>-->
+<!--    <p><a href="https://www.comp.nus.edu.sg/cs/people/ayao/"><strong>Angela Yao</strong></a></p>-->
+<!--    <p><a href="https://basurafernando.github.io/"><strong>Basura Fernando</strong></a></p>-->
+<!--    <p><a href="http://rtis.oit.unlv.edu/"><strong>Brendan Morris</strong></a></p>-->
+
+      <section class="team-row">
+        <figure>
+          <img src="paritosh.png" alt="Paritosh Parmar" class="circle-photo" />
+          <p><a href="https://paritoshparmar.github.io/"><strong>Paritosh Parmar</strong></a></p>
+        </figure>
+        <figure>
+          <img src="angela_yao.png" alt="Angela Yao" class="circle-photo" />
+          <p><a href="https://www.comp.nus.edu.sg/cs/people/ayao/"><strong>Angela Yao</strong></a></p>
+        </figure>
+        <figure>
+          <img src="basura_fernando.jpg" alt="Basura Fernando" class="circle-photo" />
+          <p><a href="https://basurafernando.github.io/"><strong>Basura Fernando</strong></a></p>
+        </figure>
+        <figure>
+          <img src="brendan_morris.jpg" alt="Brendan Morris" class="circle-photo" />
+          <p><a href="http://rtis.oit.unlv.edu/"><strong>Brendan Morris</strong></a></p>
+        </figure>
+      </section>
 </section>
 
 
