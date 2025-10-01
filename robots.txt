@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sauafg-workshop.github.io/sitemap.xml
