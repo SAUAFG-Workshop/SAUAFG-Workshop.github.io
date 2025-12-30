@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ICCV 2025 Workshop on AI-driven Skilled Activity Understanding, Assessment and Feedback Generation"
+          name="description">
+    <title>SAUAFG Workshop ICCV 2025</title> -->
+
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+      <!-- Title -->
+      <title>ICCV 2025 Workshops | SAUAFG: Skilled Activity Understanding, Assessment and Feedback Generation</title>
+    
+      <!-- Meta Description (improved, under 160 chars) -->
+      <!-- <meta name="description" content="ICCV 2025 SAUAFG Workshop on AI-driven Skilled Activity Understanding, Assessment & Feedback Generation. Keynotes, papers, and program."> -->
+    <meta name="description" content="ICCV 2025 Workshops – Join the ICCV 2025 SAUAFG workshop on Skilled Activity Understanding, Assessment & Feedback Generation. Keynotes, papers, and program details.">
+
+    
+      <!-- Canonical URL -->
+      <link rel="canonical" href="https://sauafg-workshop.github.io/">
+    
+      <!-- Open Graph (Facebook/LinkedIn) -->
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://sauafg-workshop.github.io/">
+      <meta property="og:title" content="SAUAFG Workshop – ICCV 2025">
+      <meta property="og:description" content="Workshop on Skilled Activity Understanding, Assessment & Feedback Generation at ICCV 2025. Join researchers in AI, vision, and performance assessment.">
+      <meta property="og:image" content="https://sauafg-workshop.github.io/assets/og_banner.jpg">
+    
+      <!-- Twitter Card -->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:url" content="https://sauafg-workshop.github.io/">
+      <meta name="twitter:title" content="SAUAFG Workshop – ICCV 2025">
+      <meta name="twitter:description" content="ICCV 2025 SAUAFG Workshop on AI-driven skill assessment, understanding, and feedback generation.">
+      <meta name="twitter:image" content="https://sauafg-workshop.github.io/assets/og_banner.jpg">
+
+
+    <!-- Font Awesome for icons without integrity attribute -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Bulma CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 120px;
+            line-height: 1.6;
+            text-align: justify;
+
+        }
+        h1, h2 {
+            color: #333;
+            font-size: 2.8em;  /* Title font size */
+        }
+        h3 {
+          font-size: 1em;       /* same as normal text */
+          font-weight: normal;  /* not bold */
+          margin: 0;            /* remove extra spacing */
+          display: inline;      /* inline so it flows like text */
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .authors, .section {
+            margin-bottom: 20px;
+        }
+        /* Center-align specific sections */
+        header, .demo, .results {
+            text-align: center;
+        }
+        /* Styling for superscripts */
+        sup {
+            font-size: 0.8em;
+            vertical-align: super;
+        }
+        /* Custom button styling similar to Bulma */
+        .link-block {
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .button {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 16px;
+            border-radius: 50px;
+            background-color: #333;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #444;
+        }
+        .icon {
+            margin-right: 8px;
+        }
+        /* Ensure Font Awesome styles apply */
+        .fab {
+            font-family: "Font Awesome 5 Brands" !important;
+        }
+        table, th, td {
+                      border:0.1px solid black;
+                      text-align: center;
+                    }
+
+
+<!--        ul.custom-bullets {-->
+<!--  list-style: none;-->
+<!--  padding-left: 0;-->
+<!--}-->
+
+<!--ul.custom-bullets li::before {-->
+<!--  content: "- ";-->
+<!--  margin-right: 6px;-->
+<!--  color: black; /* optional: color customization */-->
+<!--}-->
+<!--ul.custom-bullets ul {-->
+<!--  margin-left: 20px; /* indent nested list */-->
+<!--}-->
+
+        ul.top-level {
+          list-style: none;
+          padding-left: 0;
+        }
+
+        ul.top-level ul {
+          list-style: none;
+          padding-left: 0.5em;
+        }
+
+        ul.top-level ul li {
+          position: relative;
+          padding-left: 1.2em; /* shift all lines right to make room for bullet */
+        }
+
+        ul.top-level ul li::before {
+          content: "-";
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+
+        .circle-photo {
+          width: 180px;              /* adjust as needed */
+          height: 180px;             /* must be equal to width */
+          border-radius: 50%;        /* makes it circular */
+          object-fit: cover;         /* ensures the image fills the circle */
+          overflow: hidden;
+        }
+
+        .team-row {
+          display: flex;
+          justify-content: center;
+          gap: 40px;
+          margin-top: 30px;
+        }
+
+        figure {
+          text-align: center;
+          margin: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1><a href="https://iccv.thecvf.com/">ICCV 2025</a> Workshop on AI-driven Skilled Activity Understanding,
+        Assessment & Feedback Generation</h1>
+
+    <!-- Paper Link -->
+    <span class="link-block">
+            <a class="button is-dark" href="#speakers">
+<!--                <span class="icon">-->
+                <!--                    <i class="fas fa-file-pdf"></i> &lt;!&ndash; GitHub icon here &ndash;&gt;-->
+                <!--                </span>-->
+                <span>Speakers</span>
+            </a>
+        </span>
+    <!-- Code Link -->
+    <span class="link-block">
+            <a class="button is-dark" href="#cfp">
+<!--                <span class="icon">-->
+                <!--                    <i class="fab fa-github"></i> &lt;!&ndash; GitHub icon here &ndash;&gt;-->
+                <!--                </span>-->
+                <span>Call for Papers</span>
+            </a>
+        </span>
+    <!-- Dataset Link Button with Emoji Icon -->
+    <span class="link-block">
+            <a class="button is-dark" href="#papersubmission">
+<!--                <span class="icon">-->
+                <!--                    💾 &lt;!&ndash; Emoji as an icon &ndash;&gt;-->
+                <!--                </span>-->
+                <span>Paper Submission</span>
+            </a>
+        </span>
+
+    <span class="link-block">
+            <a class="button is-dark" href="#program">
+<!--                <span class="icon">-->
+                <!--                    💾 &lt;!&ndash; Emoji as an icon &ndash;&gt;-->
+                <!--                </span>-->
+                <span>Program</span>
+            </a>
+        </span>
+
+    <span class="link-block">
+            <a class="button is-dark" href="#organizers">
+<!--                <span class="icon">-->
+                <!--                    💾 &lt;!&ndash; Emoji as an icon &ndash;&gt;-->
+                <!--                </span>-->
+                <span>Organizers</span>
+            </a>
+        </span>
+
+    <span class="link-block">
+            <a class="button is-dark" href="#contact">
+<!--                <span class="icon">-->
+                <!--                    💾 &lt;!&ndash; Emoji as an icon &ndash;&gt;-->
+                <!--                </span>-->
+                <span>Contact</span>
+            </a>
+        </span>
+</header>
+
+<section class="abstract section">
+    <h2>Introduction</h2>
+    <p>Imagine a world where computer vision-based systems can analyze a video of an athlete, a surgeon, a patient, or a
+        factory worker and instantly provide expert-level actionable feedback---correcting techniques, identifying
+        inefficiencies, and helping people refine their skills in real time. Thanks to rapid progress in video
+        understanding, this vision is becoming reality. AI-powered systems can now analyze complex human activities,
+        assess performance, and generate intelligent feedback, unlocking new possibilities in sports, healthcare,
+        manufacturing, education, rehabilitation, and beyond. Through Expert Keynotes and Invited Contributions, this ICCV 2025 workshop will explore the cutting edge of skilled activity understanding, assessment, and feedback generation,
+        bridging research and real-world applications. </p>
+    <br>
+    <p>As AI systems become more capable of understanding human expertise, the implications are profound---empowering
+        individuals with personalized coaching, democratized skill development, and scalable training solutions. We
+        invite researchers, industry leaders, and practitioners to join us in shaping the future of AI-powered skill
+        understanding. Whether working on foundational research, applied solutions, or real-world deployment, this
+        workshop is an opportunity and forum to learn about and push the boundaries of how AI perceives, evaluates, and
+        enhances human ability.
+    </p>
+    <br>
+    <p><strong>Date & Timings:</strong> <strong style="color:blue;">October 19, 2025 | 13:45–18:30 (Afternoon session)</strong></p>
+    <p><strong>Venue:</strong> <strong style="color:blue;">Hawaii Convention Center, Room 318-A</strong></p>
+</section>
+
+<section class="speakers section" id="speakers">
+    <h2>Speakers</h2>
+<!--    <p><a href="https://www.cs.utexas.edu/~grauman/"><strong>Dr. Kristen Grauman</strong></a> (UT Austin + FAIR)</p>-->
+<!--    <p><a href="https://antoninofurnari.github.io/"><strong>Dr. Antonino Furnari</strong></a> (University of Catania)-->
+<!--    </p>-->
+<!--    <p><a href="https://www.linkedin.com/in/rogerionespolo"><strong>Dr. Rogerio Nespolo</strong></a> (Intuitive Surgical)-->
+<!--    </p>-->
+<!--    <p><a href="https://stanford.edu/~eadeli/"><strong>Dr. Ehsan Adeli</strong></a> (Stanford University)</p>-->
+<!--    <p><a href="https://www.bristol.ac.uk/people/person/Walterio-Mayol-Cuevas-3eaed515-00fd-4112-94a8-7efe5a5fba94/"><strong>Dr. Walterio Mayol-Cuevas</strong></a> (University of Bristol)</p>-->
+<!--    <p><a href="https://www.gedasbertasius.com/"><strong>Dr. Gedas Bertasius</strong></a> (University of North Carolina, Chapel Hill)</p>-->
+
+
+    <section class="team-row">
+        <div>
+        <figure>
+          <img src="kristen_grauman.jpg" alt="Kristen Grauman" class="circle-photo" />
+          <p><a href="https://www.cs.utexas.edu/~grauman/"><strong>Dr. Kristen Grauman</strong></a> (UT Austin + FAIR)</p>
+        </figure>
+        <figure>
+          <img src="antonino_furnari.jpg" alt="Antonino Furnari" class="circle-photo" />
+          <p><a href="https://antoninofurnari.github.io/"><strong>Dr. Antonino Furnari</strong></a> (University of Catania)
+    </p>
+        </figure>
+        <figure>
+          <img src="Rogerio_Garcia.JPEG" alt="Rogerio Nespolo" class="circle-photo" />
+          <p><a href="https://www.linkedin.com/in/rogerionespolo"><strong>Dr. Rogerio Nespolo</strong></a> (Intuitive Surgical)
+    </p>
+        </figure>
+        </div>
+        <div>
+        <figure>
+          <img src="Ehsan_Adeli.jpg" alt="Ehsan Adeli" class="circle-photo" />
+          <p><a href="https://stanford.edu/~eadeli/"><strong>Dr. Ehsan Adeli</strong></a> (Stanford University)</p>
+        </figure>
+        <figure>
+          <img src="Walterio_MayolCuevas.jpg" alt="Walterio MayolCuevas" class="circle-photo" />
+          <p><a href="https://www.bristol.ac.uk/people/person/Walterio-Mayol-Cuevas-3eaed515-00fd-4112-94a8-7efe5a5fba94/"><strong>Dr. Walterio Mayol-Cuevas</strong></a> (University of Bristol)</p>
+        </figure>
+        <figure>
+          <img src="Gedas_Bertasius.jpg" alt="Gedas Bertasius" class="circle-photo" />
+          <p><a href="https://www.gedasbertasius.com/"><strong>Dr. Gedas Bertasius</strong></a> (University of North Carolina, Chapel Hill)</p>
+        </figure>
+        </div>
+    </section>
+
+
+
+</section>
+
+
+<section class="cfp section" id="cfp">
+    <h2>Call for Papers</h2>
+    <p>We invite contributions related to, but not limited to, the following areas:</p>
+    <ul class="top-level">
+        <li><h3><strong>Algorithms &amp; Applications for Skilled Human Activity and Performance Assessment</strong></h3>
+            <ul>
+                <li>Human Skills/Performance/Action Quality Assessment/Evaluation in various domains such as Sports,
+                    Industry/Assembly line, Musical and Dance performance, Surgical procedures, Fitness, Robotics, Gait
+                    Assessment, Rehabilitation, Healthcare etc.
+                </li>
+                <li>Action and Process Mistake Detection using video and video analytics</li>
+                <li>Missing Action Prediction and Alternative Action Sequence Prediction.</li>
+                <li>Brave new ideas and novel applications of Action Quality Assessment in: Video Generation,
+                    Human-Robot-Collaboration, Robot Skills Learning etc.
+                </li>
+            </ul>
+        </li>
+        <li><h3><strong>Feedback Report Generation for Skills/Performance Improvement &amp; Guidance</strong></h3>
+            <ul>
+                <li>Captioning and Narration for Natural Language Corrective Feedback Generation</li>
+                <li>Visual/AR/VR-based Corrective Feedback Generation</li>
+            </ul>
+        </li>
+        <li><h3><strong>New Datasets &amp; Benchmarks</strong></h3>
+            <ul>
+                <li>Datasets and Benchmarks</li>
+                <li>Multimodal, Multiview datasets</li>
+                <li>Creation of Synthetic Fine-grained Action datasets</li>
+                <li>Fine-grained Video/Action generation</li>
+            </ul>
+        </li>
+        <li><h3><strong>Metric learning for Skills/Action/Motion Quality Assessment</strong></h3></li>
+        <li><h3><strong>Fine-grained Action Recognition &amp; Segmentation</strong></h3></li>
+        <li><h3><strong>Representation Learning &amp; Learning Paradigms</strong></h3>
+            <ul>
+                <li>Pose Estimation and Human-Centric Representation Learning, especially, suitable for challenging
+                    scenarios such as high-speed, non-regular actions, occlusions, etc.
+                </li>
+                <li>Generalization/Transfer Learning/Domain Adaptation for SAUAFG</li>
+                <li>Semi/Self-Supervised Learning for SAUAFG</li>
+                <li>Continual/Incremental Skills and Action Quality Assessment</li>
+                <li>Incorporation of Knowledge Graphs</li>
+                <li>Learnable Task Graphs</li>
+            </ul>
+        </li>
+        <li><h3><strong>Explainability &amp; Interpretability in SAUAFG models</strong></h3></li>
+        <li><h3><strong>Ethics &amp; Fairness in SAUAFG</strong></h3>
+            <ul>
+                <li>Ethical Considerations, Fairness, and Bias in SAUAFG systems, and strategies to mitigate them.</li>
+                <li>Social Impact of SAUAFG, including its ability to democratize access to training and Performance
+                    Evaluations, particularly in underserved communities.
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</section>
+
+
+<section class="papersubmission section" id="papersubmission">
+    <h2>Paper Submission</h2>
+    <p>We have following two Paper Tracks. Please use this <a
+            href="https://openreview.net/group?id=thecvf.com/ICCV/2025/Workshop/SAUAFG">[Openreview Link]</a> to submit
+        your papers, and select the appropriate track in OpenReview. We recommend you to use
+        Institution emails to register your account on Openreview, as non-institution emails can take upto 2 weeks to
+        register.</p>
+    <p>Decisions: July 15, 2025</p>
+    <br>
+    <p>1) <strong>Proceedings Track.</strong> Papers accepted to this track will be published in the official
+        proceedings. Please use ICCV paper
+        templates. Page limit, excluding references, is 8 pages. Please strictly follow ICCV paper guidelines. Supplementary material is allowed. We will follow single-stage review process--we will not have rebuttal stage. Tentative Submission Deadline is: <i>July 03, 2025</i>. Camera-ready dealine: August 10,2025.</p>
+    <br>
+    <p>2) <strong>Non-Proceedings Track.</strong> These papers would be presented at the workshop, but not included in
+        the proceedings and can also be submitted to future venues. We also invite papers previously accepted to ICCV
+        2025 or any other
+        venues. This tracks allows to share your work and receive feedback on your work, making it stronger. Work-in-Progress or Late
+        breaking work providing provocations for new work and ideas to emerge, with or without an accompanying evaluation,
+        can also be submitted. Supplementary material is allowed. We will follow single-stage review process--we will not have rebuttal stage. Tentative Submission Deadline is: <i>July 03, 2025</i>. <del>We may consider opening Round 2 for Non-Proceedings Track after Round 1 review. More details to follow.</del> We have received a strong number of submissions during the initial round, so we won’t be holding an official second round of submissions. However, if you are still interested in presenting your work, please feel free to reach out to us directly, and we will be happy to discuss potential opportunities.
+    </p>
+    <br>
+    <p>Please let us know if you face any problems or have any questions.</p>
+</section>
+
+<section class="program section" id="program">
+    <h2>Workshop Program</h2>
+<table style="width:100%; border-collapse: collapse; margin-left:0; text-align:left;">
+  <thead>
+    <tr>
+      <th style="width:20%; border-bottom:2px solid #ccc; padding:8px;">Time</th>
+      <th style="border-bottom:2px solid #ccc; padding:8px;">Program</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding:8px;">13:45 – 14:00</td>
+      <td style="padding:8px;">Opening Remarks</td>
+    </tr>
+    <tr>
+      <td style="padding:8px;">14:00 – 14:30</td>
+      <td style="padding:8px;">
+        Keynote-1 + QA:
+        <a href="https://www.cs.utexas.edu/~grauman/"><strong>Dr. Kristen Grauman</strong></a>
+        — Topic: <i>Show and Tell: Skill Learning from Video</i>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:8px;">14:30 – 15:00</td>
+      <td style="padding:8px;">
+        Keynote-2 + QA:
+        <a href="https://stanford.edu/~eadeli/"><strong>Dr. Ehsan Adeli</strong></a>
+        — Topic: <i>Multimodal Perception and Generation of Human Behaviors</i> 
+      </td>
+    </tr>
+      <tr>
+      <td style="padding:8px;">15:00 – 15:30</td>
+      <td style="padding:8px;">Lightning Talks</td>
+    </tr>
+    <tr>
+      <td style="padding:8px;">15:30 – 16:15</td>
+      <td style="padding:8px;">Tea Break + Poster Session</td>
+    </tr>
+    <tr>
+      <td style="padding:8px;">16:15 – 16:45</td>
+      <td style="padding:8px;">
+        Keynote-3 + QA:
+        <a href="https://www.linkedin.com/in/rogerionespolo"><strong>Dr. Rogerio Nespolo</strong></a>
+        — Topic: <i>AI for the Operating Room: From Surgical Activity Recognition to Skill Assessment and Feedback</i>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:8px;">16:45 – 17:15</td>
+      <td style="padding:8px;">
+        Keynote-4 + QA:
+        <a href="https://www.gedasbertasius.com/"><strong>Dr. Gedas Bertasius</strong></a>
+        — Topic: <i>Can AI Models Teach You to Shoot Like Steph Curry?</i> 🏀 <i></i>Challenges in Expert-Level Skill Analysis</i>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:8px;">17:15 – 17:45</td>
+      <td style="padding:8px;">
+        Keynote-5 + QA:
+        <a href="https://www.bristol.ac.uk/people/person/Walterio-Mayol-Cuevas-3eaed515-00fd-4112-94a8-7efe5a5fba94/"><strong>Dr. Walterio Mayol-Cuevas</strong></a>
+        — Topic: <i>From Skill to Struggle: Datasets and Recent Work Towards Understanding When to Offer Help</i>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:8px;">17:45 – 18:15</td>
+      <td style="padding:8px;">
+        Keynote-6 + QA:
+        <a href="https://antoninofurnari.github.io/"><strong>Dr. Antonino Furnari</strong></a>
+        — Topic: <i>From Observation to Intervention: Mistake Detection and Procedural Assistance in Egocentric Vision</i>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:8px;">18:15 – 18:30</td>
+      <td style="padding:8px;">Closing Remarks</td>
+    </tr>
+  </tbody>
+</table>
+
+
+</section>
+
+<section id="organizers" class="organizers section">
+    <h2>Organizers</h2>
+<!--    <p><a href="https://paritoshparmar.github.io/"><strong>Paritosh Parmar</strong></a></p>-->
+<!--    <p><a href="https://www.comp.nus.edu.sg/cs/people/ayao/"><strong>Angela Yao</strong></a></p>-->
+<!--    <p><a href="https://basurafernando.github.io/"><strong>Basura Fernando</strong></a></p>-->
+<!--    <p><a href="http://rtis.oit.unlv.edu/"><strong>Brendan Morris</strong></a></p>-->
+
+      <section class="team-row">
+        <figure>
+          <img src="paritosh_parmar.png" alt="Paritosh Parmar" class="circle-photo" />
+          <p><a href="https://paritoshparmar.github.io/"><strong>Paritosh Parmar</strong></a></p>
+        </figure>
+        <figure>
+          <img src="angela_yao.png" alt="Angela Yao" class="circle-photo" />
+          <p><a href="https://www.comp.nus.edu.sg/cs/people/ayao/"><strong>Angela Yao</strong></a></p>
+        </figure>
+        <figure>
+          <img src="basura_fernando.jpg" alt="Basura Fernando" class="circle-photo" />
+          <p><a href="https://basurafernando.github.io/"><strong>Basura Fernando</strong></a></p>
+        </figure>
+        <figure>
+          <img src="brendan_morris.JPG" alt="Brendan Morris" class="circle-photo" />
+          <p><a href="http://rtis.oit.unlv.edu/"><strong>Brendan Morris</strong></a></p>
+        </figure>
+      </section>
+</section>
+
+
+<section id="Contact" class="contact section">
+    <h2>Contact</h2>
+    Please do not hesitate to email us if you have any questions or concerns!
+</section>
+
+
+<footer>
+    <p>&copy; Webpage designed by <a href="https://paritoshparmar.github.io">Paritosh Parmar</a> and licensed under <a
+            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0
+        International License.</a> Please feel free to use it for your projects, but consider acknowledging in your
+        webpage!</p>
+</footer>
+
+</body>
+</html>
+
